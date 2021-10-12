@@ -1,0 +1,143 @@
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+	  
+	  table{
+	  	border: 1px solid;
+	    background-color: hotpink;*/
+	    border-collapse: collapse;
+	  }
+
+	  .table{
+	  	display: table;
+	  	width: 50%;
+	  	border: 1px solid;
+	    background-color: hotpink;
+	    border-collapse: collapse;
+	  }
+
+	  .thead {
+	  display: table-header-group;
+	  }
+
+	  .tbody {
+	  	display: table-row-group;
+
+	}
+	  .tfoot {
+	  	display: table-footer-group;
+	  	
+	  }
+
+	  .row{
+        border: 3px solid;
+        display: table-row;
+
+	  }
+	  .cell{
+	  	     display: table-cell;
+             padding: 3px;
+             border: 1px solid;
+
+	  }
+	  .cell1{
+	  	     display: table-cell;
+             padding: 3px;
+             border: 1px solid;
+             background-color: lightblue;
+
+	  }
+	  .cell2{
+	  	     display: table-cell;
+             padding: 3px;
+             border: 1px solid;
+
+	  }
+	  #tdi{
+	  	background-color: lightgreen;
+	  }
+	  .Doscolum{
+	    display: table-cell;
+        padding: 3px;
+        border: 1px solid;
+
+	  }
+
+
+	   td{
+	   	padding: 3px;
+	  	border: 1px solid;
+	  }
+	   th{
+	  	border: 1px solid;
+	  }
+
+		#f1 {
+			background-color:skyblue ;
+			
+		}
+		.clasebody{
+			 background-color: lightsalmon ;
+		}
+		#f2{
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+
+<h1 >Tablas con div</h1>
+<div class="table">
+	<div class="thead"> 
+		<div class="row">  
+		<div class="cell">Qué </div>
+		<div class="cell">Hace? </div>
+	</div> 
+</div>
+	<div class="tbody">
+	<div class="row">  
+		<div id="tdi" class="cell1">Abarco </div>
+	    <div class="cell1">dos columnas</div>
+	 </div>
+	 <div class="row">  
+		<div class="cell1" style="background: lightgreen;">Juan </div>
+		<div class="cell1">Pérez</div>
+	 </div>
+	 <div class="row">  
+		<div class="cell1">María </div>
+		<div class="cell1">Pérez</div>
+	 </div>
+	 </div>
+
+	<div class="tfoot">
+		<div class="row">  
+		<div class="cell2">Total 1</div>
+		<div class="cell2">Total 2 </div>
+	 </div>
+</div>
+</div>
+<table> 
+	<thead>
+	<tr id="f1"> <th>Qué</th>
+	     <th>hace?</th></tr> </thead>
+	     <tbody class="clasebody">
+	      <tr> <td colspan="2" >Abarco dos columnas</td></tr> <!--colspan para filas-->
+	<tr>
+		<td rowspan="2" >Juan <br> María</td><!--rowspan para filas-->
+		<td>Pérez</td>
+	</tr>
+	<tr>
+		
+		<td>Pérez</td>
+	</tr>
+	</tbody>
+        
+	<tfoot id="f2"> <tr><td>Total 1</td>
+		    <td>Total 2</td> </tr> </tfoot>
+</colgroup>
+</table>
+</body>
+
+</html>

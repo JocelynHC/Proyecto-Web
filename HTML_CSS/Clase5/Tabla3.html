@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<title></title>
+	<style type="text/css">
+	  
+	  table{
+	  	border: 2px solid;
+	    /*background-color: hotpink;*/
+	    border-collapse: collapse;
+	  }
+
+	  .table{
+	  	border: 2px solid;
+	    background-color: hotpink;
+	    border-collapse: collapse;
+	  }
+
+	  .thead{
+	  }
+
+	  .tbody{
+	  }
+	  .tfoot{
+	  }
+
+	   td{
+	   	padding: 5px;
+	  	border: 2px solid;
+	  }
+	   th{
+	  	border: 2px solid;
+	  }
+
+		#f1 {
+			background-color:skyblue ;
+			
+		}
+		.clasebody{
+			 background-color: lightsalmon ;
+		}
+		#f2{
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+<body>
+
+<h1 >Tablas con div</h1>
+<div class="table"><div class="thead"> -- </div> <div class="tbody">--</div><div class="tfoot">--</div></div>
+
+<table> 
+	<thead>
+	<tr id="f1"> <th>Qué</th>
+	     <th>hace?</th></tr> </thead>
+	     <tbody class="clasebody">
+	      <tr> <td colspan="2" >Abarco dos columnas</td></tr> <!--colspan para filas-->
+	<tr>
+		<td rowspan="2" >Juan <br> María</td><!--rowspan para filas-->
+		<td>Pérez</td>
+	</tr>
+	<tr>
+		
+		<td>Pérez</td>
+	</tr>
+	</tbody>
+        
+	<tfoot id="f2"> <tr><td>Total 1</td>
+		    <td>Total 2</td> </tr> </tfoot>
+</colgroup>
+</table>
+</body>
+
+</html>

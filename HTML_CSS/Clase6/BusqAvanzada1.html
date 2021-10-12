@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Búsqueda avanzada1</title>
+	<style type="text/css">
+		h2{
+			font-family: sans-serif;
+			font-size: 30px;
+		}
+
+		form{
+			font-family: sans-serif;
+			font-size: 17px;
+		    
+			min-width: 33%;
+		}
+
+		#Iq{
+           margin-left: 500px;
+           font-family: sans-serif;
+           font-size: 18px;
+
+		}
+		#Iqq{
+          
+           font-family: sans-serif;
+           font-size: 18px;
+
+		}
+
+		.cuadro{
+			
+			height: 20px;
+			width: 500px;
+			margin-left: 30px;
+			line-height: 100px;
+			text-align: center;
+		}
+		.cuadroul{
+			
+			height: 20px;
+			width: 210px;
+			margin-left: 30px;
+			line-height: 100px;
+			text-align: center;
+		}
+
+		.sel{
+			
+			height: 20px;
+			width: 500px;
+			margin-left: 30px;
+			line-height: 100px;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body> 
+	<h2>Búsqueda Avanzada</h2>
+	<form action="https://www.google.com/search">
+<hr>
+		
+			<div>
+				<label id="Iqq">Mostrar páginas que contengan...</label>
+				<label id="Iq">Para hacer esto en el cuadro de búsqueda</label><br><br><br>
+				
+			</div>
+			<div>
+				<label>todas estas palabras:</label>&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp 
+				<input class="cuadro" type="text" placeholder=" " required>
+				<label>Ingresa las palabras importantes: Terrier ratonero tricolor.</label><br><br>
+			</div>
+			<div>
+				<label>esta palabra o frase exactas:</label>
+				<input class="cuadro" type="text" placeholder=" " required>
+			    <label>Ingresa las palabras exactas entre comillas: "Terrier ratonero".</label><br><br>
+			</div>
+			<div>
+				<label>cualquiera de estas palabras:</label>
+				<input class="cuadro" type="text" placeholder=" " required>
+			    <label>Ingresa OR entre las palabras que desees: En miniatura OR estándar.</label><br><br>
+			</div>
+			<div>
+				<label>ninguna de estas palabras:</label>&nbsp &nbsp 
+				<input class="cuadro" type="text" placeholder=" " required>
+				<label>Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Rusell".</label><br><br>
+			</div>
+			<div>
+				<label>números del:</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+				<input class="cuadroul" type="text" placeholder=" " required>&nbsp &nbsp &nbsp al
+				<input class="cuadroul" type="text" placeholder=" " required>
+				<label>Ingresa dos puntos entre los números y agrega una unidad de medida: <br>&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp 10..35 lb, $300..$500, 2010..2011.</label><br><br>
+			</div>
+			<hr>
+			<div>
+				<label id="Iqq">Luego restringe tus<br> resultados por...</label><br><br>
+			</div>
+			<div>
+				<label for="idioma">idioma:</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+  <select class="sel">
+    <option value="cualquier">cualquier idioma</option>
+    <option value="Español">Español</option> 
+    <option value="Griego">Griego</option>
+    <option value="Ingles">Inglés</option>
+   
+  </select> Busca páginas en el idioma que seleccionas.<br><br>
+			</div>
+<div>
+				<label for="región">región:</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+  <select class="sel">
+    <option value="cualquier">cualquier región</option>
+    <option value="Albania">Albania</option>
+    <option value="Alemania">Alemania</option>
+    <option value="El salvador">El salvador</option>
+  </select> Busca páginas actualizadas en el transcurso del período que especificas. <br><br>
+			</div>
+		<div>
+				<label>sitio o dominio:</label>&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp 
+				<input class="cuadro" type="text" placeholder=" " required>
+				<label>Realiza busquedas en un sitio (como wikipedia.org) o restringe los <br>&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp resultados a un dominio como .edu, .org o .gov.</label><br><br>
+			</div>
+			<div>
+				<label for="términos">términos que aparecen:</label>&nbsp &nbsp &nbsp &nbsp &nbsp
+  <select class="sel">
+    <option value="cualquier">en cualquier parte de la página</option>
+    <option value="Título">En el título de la página</option>
+    <option value="Alemania">Alemania</option>
+    <option value="El salvador">El salvador</option>
+  </select> Busca términos en toda la página, en su título o en su dirección web, o <br>&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp vínculos que dirijan a la página que estas buscando. <br><br>
+			</div>
+			<div>
+				<label for="región">región:</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+  <select class="sel">
+    <option value="cualquier">cualquier región</option>
+    <option value="Albania">Albania</option>
+    <option value="Alemania">Alemania</option>
+    <option value="El salvador">El salvador</option>
+  </select> Busca páginas actualizadas en el transcurso del período que especificas. <br><br>
+			</div>
+			<div>
+				<label for="región">región:</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+  <select class="sel">
+    <option value="cualquier">cualquier región</option>
+    <option value="Albania">Albania</option>
+    <option value="Alemania">Alemania</option>
+    <option value="El salvador">El salvador</option>
+  </select> Busca páginas actualizadas en el transcurso del período que especificas. <br><br>
+			</div>
+			<div>
+				<label for="región">región:</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+  <select class="sel">
+    <option value="cualquier">cualquier región</option>
+    <option value="Albania">Albania</option>
+    <option value="Alemania">Alemania</option>
+    <option value="El salvador">El salvador</option>
+  </select> Busca páginas actualizadas en el transcurso del período que especificas. <br><br><br><br>
+			</div>
+	</form>
+
+</body>
+</html>

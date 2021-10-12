@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, inicial-scale=1.0">
+	<title>Hola grid!</title>
+	<style type="text/css">
+	.malla{
+		width: 90%; /*tamaño de malla*/
+		background-color: springgreen;
+		display: grid;
+		padding: 20px;
+		grid-column-gap:20px ; /*espaciado entre columnas de la malla*/
+		grid-row-gap: 20px;
+		grid-template-columns: 200px 200px 500px 60px 40px auto; /*tamaño de columnas*/
+		grid-template-rows: 500px auto 300px;/*tamaño de filas*/
+
+		
+	}
+	.item{
+		background-color: greenyellow;
+		padding: 20px;
+		text-align: center;
+
+	}
+
+</style>
+	
+</head>
+<body><div class="malla">
+<div class="item">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+<div class="item">4</div>
+<div class="item">5</div>
+<div class="item">6</div>
+<div class="item">7</div>
+<div class="item">8</div>
+<div class="item">9</div>
+<div class="item">10</div>
+<div class="item">11</div>
+<div class="item">12</div>
+</div>
+</body>
+</html>

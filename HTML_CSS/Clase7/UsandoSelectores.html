@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hola CSS</title>
+	<style type="text/css">
+		.table{
+	  	display: table;
+	  	table-layout: fixed; /*estructura fija*/
+	  	width: 40%;/*utiliza el 40% de la pagina*/
+	  	border: 1px solid;
+	    background-color: hotpink;
+	    border-collapse: collapse;
+	  }
+	   .thead {
+	  display: table-header-group;
+	  background-color: lightblue;
+	  }
+
+	  .tbody {
+	  	display: table-row-group;
+	  	background-color: lightsalmon;
+
+	}
+	  .tfoot {
+	  	display: table-footer-group;
+	  	background-color: lightgreen;
+	  	
+	  }
+	  .row{
+        border: 1px solid;
+        display: table-row;
+
+	  }
+	  .th{
+	  	     display: table-cell;
+             padding: 3px;
+             border: 1px solid;
+             font-weight: bold; /*negras*/
+     	  text-align: center;
+
+
+	  }
+	 .td, .tf{
+          display: table-cell;
+          padding: 3px;
+          border: 1px solid;
+
+	 }
+	  
+     .cspan{
+     	width: 200%; /*Abarca dos veces el tamaño*/
+     	background-color: lightsalmon;
+     	  text-align: center;
+     }
+     .rspan{
+     	float: left;/*posicion a la izq*/
+     	display: inline-block;/*genera un bloque reemplaza elemento*/
+     	position: relative;/*posicion conforme al padre*/
+     	top: 15px;/*relativo a 15 pixeles al padre*/
+     	width: 100%;
+     	background-color: lightsalmon;
+
+   
+
+     }
+	</style>
+
+</head>
+<body>
+	
+<div class="table">
+	<div class="thead"> 
+		<div class="row">  
+		<div class="th">Qué </div>
+		<div class="th">Hace? </div>
+	</div> 
+</div>
+	<div class="tbody">
+	<div class="row">  
+		<div class="cspan">Abarco dos columnas</div>
+	 </div>
+	 <div class="row">  
+		<div class="td">Juan </div>
+		<div class="rspan">&nbsp; Pérez</div>
+	 </div>
+	 <div class="row">  
+		<div class="td">María </div>
+		<div class="td"></div>
+	 </div>
+	 </div>
+
+	<div class="tfoot">
+		<div class="row">  
+		<div class="tf">Total 1</div>
+		<div class="tf">Total 2 </div>
+	 </div>
+</div>
+</div>
+
+</body>
+</html>

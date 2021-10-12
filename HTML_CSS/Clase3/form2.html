@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Búsqueda</title>
+</head>
+<body>
+<form> 
+       <table> <!-- Como se hacia antes-->
+            <tr>
+                   <td> <label>Nombre:</label></td>
+                    <td><input type="text" placeholder="Nombre" required>* </td> 
+            </tr>
+
+            <tr>
+                   <td><label>Apellido Paterno:</label></td>
+                    <td><input type="text" placeholder="Apellido Paterno" required>*</td> 
+            </tr> 
+            <tr>
+                   <td><label>Apellido Materno:</label></td>
+                   <td><input type="text" placeholder="Apellido Materno"> <br></td>
+            </tr>
+            <tr>
+                   <td><label>Fecha de nacimiento:</label></td>
+                   <td><input type="date" placeholder="Fecha de nacimiento" required>*</td>
+            </tr>
+            <tr>
+                   <td><label>Dirección:</label></td>
+                   <td><input type="" placeholder="Dirección" required>*</td>
+            </tr>
+            <tr>
+                   <td><label>Teléfono:</label></td>
+                   <td><input type="tel"  
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Teléfono">*</td>
+            </tr>
+            <tr>
+                   <td><label>Correo electrónico:</label></td>
+                   <td><input type="email" placeholder="Correo electrónico" required>*</td>
+                   <tr>
+                          <td><label>Auto preferido</label></td>
+
+                          <td>
+                            <input list="cars"/>
+                                 <datalist id="cars">
+                                   <option value="Volvo">
+                                   <option value="Saab">
+                                   <option value="Mercedes">
+                                   <option value="Audi">
+                                 </datalist>
+                          </td>
+                   </tr>
+            </tr>
+            <td><input type="submit" value="Enviar"></td>
+            <td><input type="reset" value="Limpiar"></td>
+            <tr>
+                   
+            </tr>
+       </table>
+
+
+       <input type="checkbox" id="chk" required> *<!--checked--> 
+        <label for="chk">He leído los términos y condiciones</label><br>
+      
+   </form>
+
+</body>
+</html>
