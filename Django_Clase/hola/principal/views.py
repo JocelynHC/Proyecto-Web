@@ -10,3 +10,10 @@ def pepe(request):
 
 def holaTu(request,name):
     return HttpResponse(f" Hola, {name.capitalize()}!😎")
+
+def indice(request):
+    return render(request, "principal/index.html")
+
+def indiceParam(request, name):
+    return render(request, "principal/saludo.html", {"name":name.capitalize() #aqui podriamos pasar mas parametros
+    })
