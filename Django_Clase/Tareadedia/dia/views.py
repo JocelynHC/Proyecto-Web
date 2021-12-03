@@ -5,3 +5,7 @@ from datetime import datetime
 def index(request):
     return render(request, 'dia/index.html', {'esViernes':datetime.today().isoweekday() ==5
     })
+
+def index2(request):
+    return render(request, 'dia/index2.html', {'esViernes':datetime.today().isoweekday() ==5
+    })
